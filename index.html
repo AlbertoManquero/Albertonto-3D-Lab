@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alberto Manquero | 3D Portfolio</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="fondoCanvas"></canvas>
+    <audio id="miauAudio" src="Audio/Miau.mp3"></audio>
+
+    <header>
+        <div class="header-left">
+            <a href="#" class="logo-link">
+                <img src="Fotos/LogoTaza.png" alt="Logo" class="main-logo">
+                <h1 class="font-primary">ALBERTONTO 3D LAB</h1>
+            </a>
+        </div>
+        <nav>
+            <a href="#" id="btn-contacto" class="font-primary">Contact</a>
+        </nav>
+    </header>
+
+    <div id="modal-contacto" class="modal">
+        <div class="modal-content font-secondary effect-3d">
+            <span class="close-modal" id="close-contacto">&times;</span>
+            <h3 class="font-primary" style="color: #f1f1f1; margin-bottom: 20px;">Let's talk!</h3>
+            <div class="contacto-links">
+                <p><i class="fab fa-whatsapp" style="color: #25D366;"></i> <a href="https://wa.me/526141059112" target="_blank">614 1059112</a></p>
+                <p><i class="far fa-envelope" style="color: #ff0000;"></i> <a href="mailto:josealbertomanquero@gmail.com">josealbertomanquero@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-proyecto" class="modal">
+        <div class="modal-proyecto-content effect-3d">
+            <span class="close-modal" id="close-proyecto">&times;</span>
+            <div id="detalle-contenido"></div>
+        </div>
+    </div>
+
+    <main>
+        <section class="section-title">
+            <h3 class="font-primary">PORTFOLIO</h3>
+            <p class="font-secondary">Hi! I specialize in creating 3D models and animations for your videos or video games! :3</p>
+            <p>⠀</p>
+            <h3 class="font-primary">Tools:</h3>
+            <p class="font-secondary">⮞Blender</p>
+            <p>⮞Blockbench</p>
+            <p>⮞Magicavoxel</p>
+            <p>⮞Unity</p>
+            <p>⮞Aseprite</p>
+            
+        </section>
+
+        <div class="filters">
+            
+            <h4 class="font-primary filter-container">
+                <button class="filter-btn active" data-quality="Assets">Assets</button>
+                <button class="filter-btn" data-quality="Renders">Renders</button>
+                <button class="filter-btn" data-quality="Animaciones">Animations</button>
+            </h4>
+        </div>
+
+        <div id="project-grid" class="grid-container"></div>
+    </main>
+
+    <footer>
+        <p class="font-secondary">© 2026 Alberto Manquero</p>
+        <div class="footer-icons">
+            <a href="https://wa.me/526141059112" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <i class="fas fa-cat" id="gato-pixel"></i>
+            <a href="mailto:josealbertomanquero@gmail.com"><i class="far fa-envelope"></i></a>
+        </div>
+    </footer>
+
+<script src="Js/fondo.js"></script>
+<script src="Js/Assets.js"></script>
+<script src="Js/Animaciones.js"></script>
+<script src="Js/Renders.js"></script>
+<script src="Js/dashboard.js"></script>
+</body>
+</html>
