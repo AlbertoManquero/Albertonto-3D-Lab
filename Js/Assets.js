@@ -1,7 +1,7 @@
 const dataAssets = [
    {
     "titulo": "Miscellaneous bundle",
-    "desc": "Various decorative assets created upon client request. A total of 20 unique assets, fully optimized for Unity and designed for a VR project.",
+    "desc": "Various decorative assaaaaaets created upon client request. A total of 20 unique assets, fully optimized for Unity and designed for a VR project.",
     "calidad": "Assets",
     "portada": "Fotos/Assets/Assets1/Showcase.png",
     "multimedia": [
