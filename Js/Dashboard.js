@@ -1,7 +1,7 @@
 const proyectos = [
-    ...(typeof dataAssets !== 'undefined' ? dataAssets : []),
+    ...(typeof dataAnimaciones !== 'undefined' ? dataAssets : []),
     ...(typeof dataRenders !== 'undefined' ? dataRenders : []),
-    ...(typeof dataAnimaciones !== 'undefined' ? dataAnimaciones : []),
+    ...(typeof dataAssets !== 'undefined' ? dataAnimaciones : []),
     
 ];
 
@@ -9,7 +9,7 @@ const grid = document.getElementById('project-grid');
 const modC = document.getElementById('modal-contacto');
 const modP = document.getElementById('modal-proyecto');
 
-function renderProyectos(filtro = "Assets") {
+function renderProyectos(filtro = "Animaciones") {
     grid.innerHTML = "";
     
     const filtrados = proyectos.filter(p => p.calidad === filtro);
@@ -103,4 +103,4 @@ document.getElementById('gato-pixel').onclick = () => {
     }
 };
 
-renderProyectos("Assets");
+renderProyectos("Animaciones");
